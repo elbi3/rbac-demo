@@ -1,0 +1,10 @@
+{
+  "name": "rbac-demo",
+  "main": "src/worker/index.ts",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  "account_id": "f43144f43712e503db5d8602b7f934ae",
+  "assets": { "not_found_handling": "single-page-application", "run_worker_first": ["/api/*"] },
+  "d1_databases": [{ "binding": "DB", "database_name": "rbac-demo", "database_id": "196b8736-f4ca-4451-830a-58f9fad5074c" }]
+}

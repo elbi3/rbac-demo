@@ -1,0 +1,25 @@
+{
+  "name": "rbac-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "deploy": "vite build && wrangler deploy",
+    "db:local": "wrangler d1 execute rbac-demo --local --file=schema.sql",
+    "db:remote": "wrangler d1 execute rbac-demo --remote --file=schema.sql",
+    "qa": "node qa.mjs"
+  },
+  "dependencies": {
+    "hono": "^4.13.14",
+    "vue": "^3.5.44"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.66.0",
+    "@cloudflare/workers-types": "^5.20261029.1",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "wrangler": "^4.156.0"
+  }
+}
